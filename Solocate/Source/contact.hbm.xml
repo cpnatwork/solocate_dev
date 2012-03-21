@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+	PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class name="core.Contact" table="tcontact" catalog="solocate">
+		<id name="id" column="id" type="long" unsaved-value="999999">
+			<generator class="increment"/>
+		</id>
+		<property name="firstName" column="firstname" type="string"/>
+		<property name="middleName" column="middlename" type="string"/>
+		<property name="lastName" column="lastname" type="string"/>
+		<property name="group" column="groupLabel" type="string"/>
+		<property name="profile" column="profile" type="string"/>
+	</class>
+</hibernate-mapping>
